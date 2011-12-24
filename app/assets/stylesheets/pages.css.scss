@@ -1,0 +1,39 @@
+body
+{
+	background: image-url('bg-lines.gif');
+}
+
+#container
+{
+	width: 1235px;
+	padding: 30px 30px 30px 15px;
+	margin: 0 auto;
+}
+
+header.global
+{
+	width: 232px; 
+	height: 232px;
+	margin-left: 15px; 
+	float: left;
+}
+
+.region
+{
+	width: 479px;
+	margin: 0 0 15px 15px;
+	float: left;
+	background: #666;
+	
+	&.r1
+	{
+		width: 973px;
+		min-height: 232px;
+		float: right;
+	}
+	
+	&.r4
+	{
+		width: 232px;
+	}
+}
