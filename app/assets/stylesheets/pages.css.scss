@@ -1,3 +1,5 @@
+@import 'global';
+
 body
 {
 	background: image-url('bg-lines.gif');
@@ -6,34 +8,125 @@ body
 #container
 {
 	width: 1235px;
-	padding: 30px 30px 30px 15px;
+	padding: ($margin-width * 2) ($margin-width * 2) ($margin-width * 2) $margin-width;
 	margin: 0 auto;
 }
 
 header.global
 {
-	width: 232px; 
-	height: 232px;
-	margin-left: 15px; 
+	margin-left: $margin-width; 
 	float: left;
+	
+	h1
+	{
+		width: 200px; 
+		height: 30px;
+		padding-top: 200px - 30px;
+		background: image-url('beta-logo.png') 15px top no-repeat;
+		text-transform: uppercase;
+		font-family: $sixcaps;
+		font-size: 1.9em;
+		letter-spacing: 4px;		
+		color: $secondary;
+			
+		span { color: #464c54; }
+	}
 }
 
 .region
 {
-	width: 479px;
-	margin: 0 0 15px 15px;
+	width: $column-width * 2 + $margin-width;
+	margin: 0 0 $margin-width $margin-width;
 	float: left;
-	background: #666;
 	
 	&.r1
 	{
-		width: 973px;
-		min-height: 232px;
+		width: 977px;
 		float: right;
+		
+		.synopsis
+		{
+			width: 977px - 30px;
+			min-height: 183px;
+			margin: 0;
+		}
 	}
 	
 	&.r4
 	{
-		width: 232px;
+		width: $column-width;
+		margin-bottom: -15px;
 	}
+	
+	.synopsis
+	{
+		float: left;
+		width: ($column-width * 2) + $margin-width - 30px;
+		padding: 3px 15px 15px 10px;
+		margin-bottom: $margin-width;
+		background: $primary;
+		color: $tertiary;
+		
+		&.split 
+		{
+			width: $column-width - 30px;
+			
+			&.left { margin-right: $margin-width; }
+		}
+		
+		h2
+		{
+			color: $secondary;
+			font-family: $sixcaps;
+			font-size: 2.3em;
+			letter-spacing: 2px;
+			text-transform: uppercase;
+		}
+		
+		.thumb
+		{
+			float: left;
+			margin-right: 10px;
+			margin-bottom: -2px;
+			
+			img 
+			{ 
+				width: 50px; 
+				height: 50px; 
+			}
+		}
+		
+		p
+		{
+			font-family: $news-cycle;
+			font-size: 0.9em;
+			line-height: 1.3em;
+		}
+		
+		a
+		{
+			color: $secondary;
+		}
+	}
+	
+	#bulb
+	{
+		img { float: right; }
+	}
+}
+
+footer.global
+{
+	background: $primary;
+	color: $tertiary;
+	width: 1200px;
+	height: 10px;
+	line-height: 10px;
+	padding: 10px;
+	margin: 0 0 30px $margin-width;
+	float: left;
+	clear: left;
+	font-family: $sixcaps;
+	text-transform: uppercase;
+	letter-spacing: 2px;
 }

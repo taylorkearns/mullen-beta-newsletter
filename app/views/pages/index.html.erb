@@ -1,11 +1,13 @@
 <div id="container">
 	<header class="global">
-		<h1>Beta<span>Report</span>Jan2012</h1>
+		<%= link_to '/' do %>
+			<h1>Beta<span>Report</span>Jan2012</h1>
+		<% end %>
 	</header>
 	
 	<div class="region r1">
 		<div class="synopsis s1">
-			<h2>Title</h2>
+			<h2>Trend</h2>
 			
 			<div class="thumb">
 				<%= image_tag("") %>
@@ -18,8 +20,9 @@
 	</div> <!-- .region -->
 	
 	<div class="region r2">
-		<div class="synopsis s1">
-			<h2>Title</h2>
+	
+		<div class="synopsis split left s1">
+			<h2>Digital</h2>
 			
 			<div class="thumb">
 				<%= image_tag("") %>
@@ -30,7 +33,7 @@
 			</div>
 		</div> <!-- .synopsis -->
 		
-		<div class="synopsis s2">
+		<div class="synopsis split s2">
 			<h2>Title</h2>
 			
 			<div class="thumb">
@@ -92,7 +95,7 @@
 			</div>
 		</div> <!-- .synopsis -->
 
-		<div class="synopsis s3">
+		<div class="synopsis split left s3">
 			<h2>Title</h2>
 			
 			<div class="thumb">
@@ -104,7 +107,7 @@
 			</div>
 		</div> <!-- .synopsis -->
 
-		<div class="synopsis s4">
+		<div class="synopsis split s4">
 			<h2>Title</h2>
 			
 			<div class="thumb">
@@ -118,7 +121,7 @@
 	</div> <!-- .region -->
 	
 	<div class="region r4">
-		<div class="synopsis s1">
+		<div class="synopsis split s1">
 			<h2>Title</h2>
 			
 			<div class="thumb">
@@ -130,7 +133,7 @@
 			</div>
 		</div> <!-- .synopsis -->
 		
-		<div class="synopsis s2">
+		<div class="synopsis split s2">
 			<h2>Title</h2>
 			
 			<div class="thumb">
@@ -142,7 +145,7 @@
 			</div>
 		</div> <!-- .synopsis -->
 		
-		<div class="synopsis s3">
+		<div class="synopsis split s3">
 			<h2>Title</h2>
 			
 			<div class="thumb">
@@ -153,5 +156,13 @@
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.</p>
 			</div>
 		</div> <!-- .synopsis -->
+		
+		<div id="bulb">
+			<%= image_tag("lightbulb.png") %>
+		</div>
 	</div> <!-- .region -->
+	
+	<footer class="global">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+	</footer>
 </div> <!-- #container -->
