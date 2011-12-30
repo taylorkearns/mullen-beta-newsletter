@@ -6,156 +6,216 @@
 	</header>
 	
 	<div class="region r1">
-		<div class="synopsis s1">
-			<h2>Trend</h2>
-			
-			<div class="thumb">
-				<%= image_tag("") %>
-			</div>
+		<% if news_item_any?(1) %>
+			<!-- POSITION 1 -->
+			<div class="synopsis s1">
+				<h2><%= headline(1) %></h2>
 				
-			<div class="narrative">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.</p>
-			</div>
-		</div> <!-- .synopsis -->
+				<% if image_any?(1) %>
+					<div class="thumb<% if image_right?(1) %> right<% end %>" style="width: <%= image_width(1) %>px; height: <%= image_height(1) %>px">
+						<%= image_tag(image_filename(1)) %>
+					</div>
+				<% end %>
+					
+				<div class="narrative">
+					 <p><%= synopsis(1) %></p>
+				</div>
+			</div> <!-- .synopsis -->
+		<% end %>
 	</div> <!-- .region -->
 	
 	<div class="region r2">
-	
-		<div class="synopsis split left s1">
-			<h2>Digital</h2>
-			
-			<div class="thumb">
-				<%= image_tag("") %>
-			</div>
-			
-			<div class="narrative">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.</p>
-			</div>
-		</div> <!-- .synopsis -->
+		<% if news_item_any?(2) %>
+			<!-- POSITION 2 -->
+			<div class="synopsis split left s1">
+				<h2><%= headline(2) %></h2>
+				
+				<% if image_any?(2) %>
+					<div class="thumb<% if image_right?(2) %> right<% end %>" style="width: <%= image_width(2) %>px; height: <%= image_height(2) %>px">
+						<%= image_tag(image_filename(2)) %>
+					</div>
+				<% end %>
+				
+				<div class="narrative">
+					 <p><%= synopsis(2) %></p>
+				</div>
+			</div> <!-- .synopsis -->
+		<% end %>
 		
-		<div class="synopsis split s2">
-			<h2>Title</h2>
-			
-			<div class="thumb">
-				<%= image_tag("") %>
-			</div>
-			
-			<div class="narrative">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.</p>
-			</div>
-		</div> <!-- .synopsis -->
+		<% if news_item_any?(3) %>
+			<!-- POSITION 3 -->
+			<div class="synopsis split s2">
+				<h2><%= headline(3) %></h2>
+				
+				<% if image_any?(3) %>
+					<div class="thumb<% if image_right?(3) %> right<% end %>" style="width: <%= image_width(3) %>px; height: <%= image_height(3) %>px">
+						<%= image_tag(image_filename(3)) %>
+					</div>
+				<% end %>
+				
+				<div class="narrative">
+					 <p><%= synopsis(3) %></p>
+				</div>
+			</div> <!-- .synopsis -->
+		<% end %>
 
-		<div class="synopsis s3">
-			<h2>Title</h2>
+		<% if news_item_any?(4) %>			
+			<!-- POSITION 4 -->
+			<div class="synopsis s3">
+				<h2><%= headline(4) %></h2>
+				
+				<% if image_any?(4) %>
+					<div class="thumb<% if image_right?(4) %> right<% end %>" style="width: <%= image_width(4) %>px; height: <%= image_height(4) %>px">
+						<%= image_tag(image_filename(4)) %>
+					</div>
+				<% end %>
+				
+				<div class="narrative">
+					 <p><%= synopsis(4) %></p>
+				</div>
+			</div> <!-- .synopsis -->
+		<% end %>
 			
-			<div class="thumb">
-				<%= image_tag("") %>
-			</div>
-			
-			<div class="narrative">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.</p>
-			</div>
-		</div> <!-- .synopsis -->
-		
-		<div class="synopsis s4">
-			<h2>Title</h2>
-			
-			<div class="thumb">
-				<%= image_tag("") %>
-			</div>
-			
-			<div class="narrative">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.</p>
-			</div>
-		</div> <!-- .synopsis -->
+		<% if news_item_any?(5) %>			
+			<!-- POSITION 5 -->
+			<div class="synopsis s4">
+				<h2><%= headline(5) %></h2>
+				
+				<% if image_any?(5) %>
+					<div class="thumb<% if image_right?(5) %> right<% end %>" style="width: <%= image_width(5) %>px; height: <%= image_height(5) %>px">
+						<%= image_tag(image_filename(5)) %>
+					</div>
+				<% end %>
+				
+				<div class="narrative">
+					 <p><%= synopsis(5) %></p>
+				</div>
+			</div> <!-- .synopsis -->
+		<% end %>
 	</div> <!-- .region -->
 	
 	<div class="region r3">
-		<div class="synopsis s1">
-			<h2>Title</h2>
-			
-			<div class="thumb">
-				<%= image_tag("") %>
-			</div>
-			
-			<div class="narrative">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.</p>
-			</div>
-		</div> <!-- .synopsis -->
+	
+		<% if news_item_any?(6) %>			
+			<!-- POSITION 6 -->
+			<div class="synopsis s1">
+				<h2><%= headline(6) %></h2>
+				
+				<% if image_any?(6) %>
+					<div class="thumb<% if image_right?(6) %> right<% end %>" style="width: <%= image_width(6) %>px; height: <%= image_height(6) %>px">
+						<%= image_tag(image_filename(6)) %>
+					</div>
+				<% end %>
+				
+				<div class="narrative">
+					 <p><%= synopsis(6) %></p>
+				</div>
+			</div> <!-- .synopsis -->
+		<% end %>
+		
+		<% if news_item_any?(7) %>			
+			<!-- POSITION 7 -->
+			<div class="synopsis s2">
+				<h2><%= headline(7) %></h2>
+				
+				<% if image_any?(7) %>
+					<div class="thumb<% if image_right?(7) %> right<% end %>" style="width: <%= image_width(7) %>px; height: <%= image_height(7) %>px">
+						<%= image_tag(image_filename(7)) %>
+					</div>
+				<% end %>
+				
+				<div class="narrative">
+					 <p><%= synopsis(7) %></p>
+				</div>
+			</div> <!-- .synopsis -->
+		<% end %>
 
-		<div class="synopsis s2">
-			<h2>Title</h2>
-			
-			<div class="thumb">
-				<%= image_tag("") %>
-			</div>
-			
-			<div class="narrative">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.</p>
-			</div>
-		</div> <!-- .synopsis -->
+		<% if news_item_any?(8) %>			
+			<!-- POSITION 8 -->
+			<div class="synopsis split left s3">
+				<h2><%= headline(8) %></h2>
+				
+				<% if image_any?(8) %>
+					<div class="thumb<% if image_right?(8) %> right<% end %>" style="width: <%= image_width(8) %>px; height: <%= image_height(8) %>px">
+						<%= image_tag(image_filename(8)) %>
+					</div>
+				<% end %>
+				
+				<div class="narrative">
+					 <p><%= synopsis(8) %></p>
+				</div>
+			</div> <!-- .synopsis -->
+		<% end %>
 
-		<div class="synopsis split left s3">
-			<h2>Title</h2>
-			
-			<div class="thumb">
-				<%= image_tag("") %>
-			</div>
-			
-			<div class="narrative">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.</p>
-			</div>
-		</div> <!-- .synopsis -->
-
-		<div class="synopsis split s4">
-			<h2>Title</h2>
-			
-			<div class="thumb">
-				<%= image_tag("") %>
-			</div>
-			
-			<div class="narrative">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.</p>
-			</div>
-		</div> <!-- .synopsis -->
+		<% if news_item_any?(9) %>			
+			<!-- POSITION 9 -->
+			<div class="synopsis split s4">
+				<h2><%= headline(9) %></h2>
+				
+				<% if image_any?(9) %>
+					<div class="thumb<% if image_right?(9) %> right<% end %>" style="width: <%= image_width(9) %>px; height: <%= image_height(9) %>px">
+						<%= image_tag(image_filename(9)) %>
+					</div>
+				<% end %>
+				
+				<div class="narrative">
+					 <p><%= synopsis(9) %></p>
+				</div>
+			</div> <!-- .synopsis -->
+		<% end %>
 	</div> <!-- .region -->
 	
 	<div class="region r4">
-		<div class="synopsis split s1">
-			<h2>Title</h2>
-			
-			<div class="thumb">
-				<%= image_tag("") %>
-			</div>
-			
-			<div class="narrative">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.</p>
-			</div>
-		</div> <!-- .synopsis -->
+		<% if news_item_any?(10) %>			
+			<!-- POSITION 10 -->
+			<div class="synopsis split s1">
+				<h2><%= headline(10) %></h2>
+				
+				<% if image_any?(10) %>
+					<div class="thumb<% if image_right?(10) %> right<% end %>" style="width: <%= image_width(10) %>px; height: <%= image_height(10) %>px">
+						<%= image_tag(image_filename(10)) %>
+					</div>
+				<% end %>
+				
+				<div class="narrative">
+					 <p><%= synopsis(10) %></p>
+				</div>
+			</div> <!-- .synopsis -->
+		<% end %>
 		
-		<div class="synopsis split s2">
-			<h2>Title</h2>
-			
-			<div class="thumb">
-				<%= image_tag("") %>
-			</div>
-			
-			<div class="narrative">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.</p>
-			</div>
-		</div> <!-- .synopsis -->
+		<% if news_item_any?(11) %>			
+			<!-- POSITION 11 -->
+			<div class="synopsis split s2">
+				<h2><%= headline(11) %></h2>
+				
+				<% if image_any?(11) %>
+					<div class="thumb<% if image_right?(11) %> right<% end %>" style="width: <%= image_width(11) %>px; height: <%= image_height(11) %>px">
+						<%= image_tag(image_filename(11)) %>
+					</div>
+				<% end %>
+				
+				<div class="narrative">
+					 <p><%= synopsis(11) %></p>
+				</div>
+			</div> <!-- .synopsis -->
+		<% end %>
 		
-		<div class="synopsis split s3">
-			<h2>Title</h2>
-			
-			<div class="thumb">
-				<%= image_tag("") %>
-			</div>
-			
-			<div class="narrative">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.</p>
-			</div>
-		</div> <!-- .synopsis -->
+		<% if news_item_any?(12) %>			
+			<!-- POSITION 12 -->
+			<div class="synopsis split s3">
+				<h2><%= headline(12) %></h2>
+				
+				<% if image_any?(12) %>
+					<div class="thumb<% if image_right?(12) %> right<% end %>" style="width: <%= image_width(12) %>px; height: <%= image_height(12) %>px">
+						<%= image_tag(image_filename(12)) %>
+					</div>
+				<% end %>
+				
+				<div class="narrative">
+					 <p><%= synopsis(12) %></p>
+				</div>
+			</div> <!-- .synopsis -->
+		<% end %>
 		
 		<div id="bulb">
 			<%= image_tag("lightbulb.png") %>
