@@ -66,12 +66,23 @@ header.global
 		margin-bottom: $margin-width;
 		background: $primary;
 		color: $tertiary;
+		@include transition;
+		@include transition(background-color, 0.2s, linear);
 		
 		&.split 
 		{
 			width: $column-width - 30px;
 			
 			&.left { margin-right: $margin-width; }
+		}
+		
+		&:hover
+		{
+			background: $tertiary;
+			color: $primary;
+			@include shadow;
+			cursor: default;
+			
 		}
 		
 		h2

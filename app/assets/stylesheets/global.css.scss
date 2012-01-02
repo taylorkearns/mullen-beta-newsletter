@@ -10,6 +10,23 @@
     font-style: normal;
 }
 
+/* Mixins */
+@mixin shadow($horizontal: 0, $vertical: 0, $blur: 5px, $color: rgba(0,0,0,0.5)) 
+{
+	-moz-box-shadow: $horizontal $vertical $blur $color;
+	-webkit-box-shadow: $horizontal $vertical $blur $color;
+	box-shadow: $horizontal $vertical $blur $color;
+}
+
+@mixin transition($property: color, $speed: 0.2s, $motion: linear) 
+{
+	-moz-transition: $property $speed $motion;
+	-o-transition: $property $speed $motion;
+	-ms-transition: $property $speed $motion;
+	-webkit-transition: $property $speed $motion;
+	transition: $property $speed $motion;
+}
+
 /* Fonts */
 $news-cycle: "News Cycle", "Arial Narrow", "Helvetica Neue", Arial, Helvetica, sans-serif;
 $sixcaps: "SixCapsRegular", $news-cycle;
